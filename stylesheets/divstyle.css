@@ -1,0 +1,54 @@
+div {
+    border:  3px solid gray;
+    padding: 30px;
+    margin: 10px;
+}
+
+header {
+    border:  3px solid gray;
+    padding: 30px;
+    margin: 10px;
+}
+
+main {
+    border:  3px solid gray;
+    padding: 30px;
+    margin: 10px;
+}
+
+footer {
+    border:  3px solid gray;
+    padding: 30px;
+    margin: 10px;
+}
+
+section {
+    border-top: 2px dotted gray;
+    border-bottom: 2px dotted gray;
+}
+
+span {
+    background-color: indigo;
+    display: inline;
+    color: white;
+}
+
+section.noticias {
+    overflow: hidden; /*Valor que corrige o problema*/ 
+}
+
+article {
+    padding: 20px;
+    /* margin-bottom: 10px; */
+    background-color: #ffa600ad;
+    float: left;
+    width: 28%;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
+@media (max-width: 1200px){
+    article {
+        width: 100%;
+    }
+}

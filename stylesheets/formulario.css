@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial';
+}
+.center {
+    margin: 5px 50px 5px 50px;
+    padding: 5px 50px 5px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Arial';
+}
+/* Pseudo-seletores */
+
+input {
+    border-color: blue;
+}
+
+input:hover {
+    background-color: #ac1fbebf;
+    border-color: rgba(255, 183, 48, 0.733);
+}
+
+input:focus {
+    width: 100px;
+}
+
+p:hover {
+    color: orange;
+}
+
+p:first-of-type {
+    background-color: papayawhip;
+}
+
+p:nth-child(even) {
+    background-color: papayawhip;
+}
+
+/* 
+    :HOVER Controla o elemento quando o cursor do mouse passa por cima do elemento
+    :FOCUS - Visível quando clicamos sobre. Quando posto em foco
+    :NTH-CHILD() - Qual dos elementos irmão queremos mudar - EVEN ou ODD ou valor numerico
+    :first-of-type - primeiro do tipo
+*/
