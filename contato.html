@@ -25,11 +25,15 @@
                 <h3>Formulário</h3>
                 <form action="">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome">   
-                    <br><br>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required onkeyup="validaNome()">
+                    <div id="txtNome"></div>
+                    <br>
+                    
                     <label for="email">Email:</label>
-                    <input type="email" id="nome" placeholder="Digite seu e-mail">
-                    <br><br>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" required onkeyup="validaEmail()">
+                    <div id="txtEmail"></div>
+                    <br>
+                    
                     <label for="assunto">Assunto:</label><br>
                     <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
                     <br><br>
@@ -38,25 +42,26 @@
             </div>
             <div class="ml-50">
                 <h3>Endereço</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486419.6991028925!2d-55.33056666627384!3d4.034446329354517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d12155785f7d753%3A0xde27f7e90f0af446!2sGuiana%20Francesa!5e1!3m2!1spt-BR!2sbr!4v1629136669033!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197721328575!2d-46.65867588538396!3d-23.561341267475875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1629295385810!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </main>
+
     <hr>
     <footer class="center">
         <div class="container">
             <a href="https://www.facebook.com/" target="_blank">
-                <img class="tm" src="./assets/img/face.png" alt="Logo Facebook">
+                <img class="tm ml-50" src="./assets/img/face.png" alt="Logo Facebook">
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <img class="tm" src="./assets/img/inst.png" alt="Logo Instagram">
+                <img class="tm ml-50" src="./assets/img/inst.png" alt="Logo Instagram">
             </a>
-
-
         </div>
         <p class="center">
             Todos os direitos reservados: Lucas &copy
         </p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
